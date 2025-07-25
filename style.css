@@ -1,0 +1,816 @@
+body{
+ 
+}
+
+/************************************/
+/*             navbar               */
+/************************************/
+.LogoJuan {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
+.LogoJuan:hover {
+    transform: scale(1.1); /* Aumenta un 10% el tamaño */
+   
+  }
+
+  
+    
+.navbar-nav {
+          margin-left: auto;
+          
+    }
+.navbar{
+      background-color: #ffffff;
+    }
+
+ .navbar li{
+     font-size: 1rem;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 800;  
+    }  
+ li:hover {
+   
+    transform: translateX(10px); /* Mueve 10px hacia la derecha */
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    text-decoration: underline; /* Añade una línea debajo del texto cuando el mouse pasa por encima */
+    }
+
+/* Sidebar oculto por defecto */
+.sidebar {
+  position: fixed;
+ position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 60px 20px 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+/* Mostrar sidebar */
+.sidebar.active {
+  right: 0;
+}
+
+/* Botón de cerrar */
+.close-btn {
+ background: none;
+  border: none;
+  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+.container-hero a {
+    font-size: 170%;
+    font-family: 'Readex Pro', sans-serif;
+    color: #1100ff;
+}
+
+
+    
+
+/************************************/
+/* descripcion princiapl*/
+/************************************/
+
+
+.foto1 {
+    height: 200px; /* Tamaño fijo para mantener proporción */
+    margin-right: 40px; /* Espacio entre la imagen y el texto */
+    border-radius: 10px; /* Esquinas redondeadas para que se vea más suave */
+}
+.description {
+  display: flex;                      /* Usamos flexbox para centrar */
+  justify-content: center;           /* Centrado horizontal */
+  align-items: center;               /* Centrado vertical */
+  text-align: center;                /* Centrar texto dentro */
+  padding: 60px 20px;                /* Espaciado interior */
+  background-color: #ffffff;         /* Color de fondo claro */
+}
+
+/* Contenedor del texto y redes */
+.text {
+  max-width: 1000px;                  /* Ancho máximo para evitar que se extienda demasiado */
+}
+
+/* Título principal */
+.text h1 {
+  font-size: 3.8rem;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Párrafo descriptivo */
+.text p {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de íconos sociales */
+.social-icons {
+  display: flex;
+  flex-direction: row;  /* 👈 Fuerza que estén en fila */
+  justify-content: center;
+  align-items: center;
+  gap: 25px;                      /* Espacio entre ellos */
+}
+
+/* Enlaces de redes sociales */
+.social-icons a {
+  font-size: 4rem;                   /* Tamaño de íconos */
+  color: #000000;                       /* Color base */
+  transition: color 0.3s;           /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover en íconos */
+.social-icons a:hover {
+  color: #04a7ff;                    /* Cambia a azul al pasar el mouse */
+}
+
+
+
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #000000;
+  font-size: 32px;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* azul LinkedIn */
+  transform: scale(1.2);
+}
+
+.social-icons a:first-child:hover {
+  color: #8c00ff; /* GitHub */
+}
+
+
+
+/************************************/
+/* Working*/
+/************************************/
+
+
+.working_one {
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 100px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+
+.description-Work {
+ flex: 1 1 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-Work h1 {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffd341;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding-left: 10px;
+}
+
+.text-block {
+  background-color: #faf9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-block p {
+  font-size: 20px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.description-Work h1:hover {
+  transform: scale(1.1);
+}
+
+.image-block {
+  flex:1 1 40%;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #eceff0;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+}
+
+.video-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+  padding-left: 10px;
+
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.social-icons{
+  justify-content: center;
+}
+
+
+
+/************************************/
+/* Working 2*/
+/************************************/
+
+
+.working_two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 100px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+
+.text-block2 {
+  background-color: #faf9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-block2 p {
+  font-size: 20px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.image-block2 {
+ flex:1 1 40%;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+   background-color: #eceff0;
+}
+
+.image-block2 img {
+ width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+}
+
+
+
+
+.description-Work2{
+flex: 1 1 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title2 {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #1eff00;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.title2:hover {
+  transform: scale(1.1);
+}
+
+.text-work2{
+  display:grid ;
+  width: 25%;
+  background-color: #1eff00;
+  padding-top: 10px;
+  text-align: center;             /* centra el texto x */
+  font-size: 25px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+}
+  
+/************************************/
+/* Working 3*/
+/************************************/
+
+
+.working_tree{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 100px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+
+.text-block3 {
+  background-color: #faf9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-block3 p {
+  font-size: 20px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.image-block3 {
+ flex:1 1 58%;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+   background-color: #eceff0;
+}
+
+.image-block3 img {
+ width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+}
+
+
+
+
+.description-Work3{
+flex: 1 1 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title3 {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #ff0000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.title3:hover {
+  transform: scale(1.1);
+}
+
+.text-work3{
+  display:grid ;
+  width: 25%;
+  background-color: #1eff00;
+  padding-top: 10px;
+  text-align: center;             /* centra el texto x */
+  font-size: 25px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+}
+  
+
+
+/* ********************************** */
+/*               querris            */
+/* ********************************** */
+
+/* ======================== */
+/* 📱 Dispositivos pequeños (teléfonos) */
+/* ======================== */
+@media (max-width: 576px) {
+
+
+  .social-icons {
+    flex-direction: row;  /* Mantiene íconos en línea horizontal */
+    flex-wrap: wrap;      /* Permite que bajen a otra fila si no caben */
+    gap: 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .description,
+  .working_one,
+  .working_two,
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text h1 {
+    font-size: 2.2rem;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+  }
+
+
+  .formulario {
+    padding: 10px;
+  }
+
+  .description-Work h1,
+  .title2 {
+    font-size: 2.2rem;
+  }
+
+  .text-block p,
+  .text-block2 p {
+    font-size: 1rem;
+  }
+
+  .video-container {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .menu-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ======================== */
+/* 📱 Tablets (pantallas medianas) */
+/* ======================== */
+@media (min-width: 577px) and (max-width: 991px) {
+
+
+  .text h1 {
+    font-size: 2.8rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .description,
+  .working_one,
+  .working_two {
+    flex-direction: column;
+  }
+
+  .image-block img,
+  .image-block2 img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .formulario {
+    padding: 15px;
+  }
+
+  .menu-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* ======================== */
+/* 💻 Pantallas grandes (escritorio) */
+/* ======================== */
+@media (min-width: 992px) {
+  /* Aquí normalmente no necesitas muchos cambios si ya diseñaste para escritorio */
+}
+
+/* ********************************** */
+/*               Conoceme              */
+/* ********************************** */
+
+
+.hero{
+background-color: rgb(255, 255, 255);
+min-height: 450px;
+text-align: center;
+
+ }
+ .conoce{
+   padding: 3rem;
+   
+ }
+
+ .foto3{
+   width: 250px;
+   height: 200px; 
+   border-radius: 30%;
+   margin: 20px;
+ }
+
+ section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2%;
+ }
+
+ /*sobre mi */
+ .tituloP{
+   font-size: 3.8rem;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+ }
+
+ .texto3{
+    font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+ }
+
+ .seccion-oscura{
+   background-color: #39394d ;
+   color: white;
+   
+ }
+
+ .sobre-mi .contenedor{
+   max-width: 100%;
+   text-align: center;
+   
+ }
+
+ .seccion-titulo{
+    font-size: 2.5rem;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+ }
+ 
+ .seccion-texto{
+     font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+ }
+
+
+ .experiencia{
+  padding: 40px 40px 60px 40px ;
+ }
+ .experiencia .colum{
+  padding: 20px;
+  border: 2px solid #8080804d;
+  
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in ;
+ }
+
+ .experiencia .colum:hover {
+color: white;
+background-color: #1b1b32;
+ }
+ .seccion-clara{
+  color: #000000;
+  background-color: white;
+ }
+
+ .expe-titulo{
+  font-size: 1.5rem;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+ }
+
+ .text-secion-clara{
+     font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+ }
+
+ .badge{
+  margin: 5px;
+ }
+ .badges-contenedor{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+ }
+ .experiencia i {
+  font-size: 3.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+padding: 8px 19px;
+border-radius: 50%;
+ }
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+/* Contenedor principal del footer */
+.footer {
+  width: 100%;                         /* El footer ocupa todo el ancho disponible */
+  background-color: #1f1f1f;           /* Fondo oscuro */
+  color: #fff;                         /* Texto blanco */
+  padding: 40px 20px;                  /* Espaciado interno arriba/abajo y lados */
+  box-sizing: border-box;             /* El padding se incluye dentro del ancho total */
+}
+
+/* Contenedor flexible de las 4 columnas principales */
+.menu-footer {
+  display: flex;                       /* Activamos flexbox para alinear los bloques */
+  flex-wrap: wrap;                     /* Si no hay espacio, las columnas se bajan */
+  justify-content: space-between;     /* Espacio igual entre columnas */
+  gap: 20px;                           /* Espacio entre columnas cuando se colapsan */
+}
+
+/* Cada una de las 4 columnas */
+.menu-footer > div {
+  flex: 1 1 220px;                     /* Cada bloque crece igual, pero no menos de 220px */
+  min-width: 220px;                    /* Previene que se haga muy angosto en pantallas grandes */
+}
+
+/* Títulos del footer */
+.title-footer {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;                /* Espacio debajo del título */
+}
+
+/* Listas de enlaces o información */
+.menu-footer ul {
+  list-style: none;                   /* Quita los puntos de las listas */
+  padding: 0;                         /* Elimina el espacio por defecto */
+}
+
+.menu-footer ul li {
+  margin-bottom: 10px;                /* Espacio entre ítems de la lista */
+  font-size: 14px;
+}
+
+/* Enlaces dentro del footer */
+.menu-footer ul li a {
+  color: #ccc;                        /* Color de texto gris claro */
+  text-decoration: none;             /* Sin subrayado */
+  transition: color 0.3s;            /* Transición suave en el hover */
+}
+
+.menu-footer ul li a:hover {
+  color: #fff;                        /* Cambia a blanco al pasar el mouse */
+}
+
+
+/* Contenido del bloque de sugerencias */
+.newsletter .content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  width: 100%;                        /* El input ocupa todo el ancho del contenedor */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: #ffd341;         /* Color llamativo para el botón */
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #ffc107;         /* Efecto hover en el botón */
+}
+
+/* Pie de página inferior */
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+/************************************/
+/* formulario de contacto*/
+/************************************/
+
+
+.formulario {
+width: 90%;
+margin-left: 5%;
+background-color: rgb(211, 221, 230);
+padding: 12px 20px;
+border-radius: 4px;
+box-shadow: 0px 2px 2px rgb(0,0,0,0.1);
+text-align: CENTER;
+ font-size: 1rem;
+font-family: 'Readex Pro', sans-serif;
+
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
